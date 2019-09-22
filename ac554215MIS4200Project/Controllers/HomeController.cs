@@ -15,14 +15,14 @@ namespace ac554215MIS4200Project.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "MIS4200 site";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact me";
 
             return View();
         }

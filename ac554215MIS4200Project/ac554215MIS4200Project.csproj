@@ -168,16 +168,22 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\coursesController.cs" />
+    <Compile Include="Controllers\enrollmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\studentsController.cs" />
+    <Compile Include="DAL1\MIS4200Context.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\MISContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\order.cs" />
+    <Compile Include="Models\StudentCourseEnrollment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -238,6 +244,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\students\Create.cshtml" />
+    <Content Include="Views\students\Delete.cshtml" />
+    <Content Include="Views\students\Details.cshtml" />
+    <Content Include="Views\students\Edit.cshtml" />
+    <Content Include="Views\students\Index.cshtml" />
+    <Content Include="Views\courses\Create.cshtml" />
+    <Content Include="Views\courses\Delete.cshtml" />
+    <Content Include="Views\courses\Details.cshtml" />
+    <Content Include="Views\courses\Edit.cshtml" />
+    <Content Include="Views\courses\Index.cshtml" />
+    <Content Include="Views\enrollments\Create.cshtml" />
+    <Content Include="Views\enrollments\Delete.cshtml" />
+    <Content Include="Views\enrollments\Details.cshtml" />
+    <Content Include="Views\enrollments\Edit.cshtml" />
+    <Content Include="Views\enrollments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
