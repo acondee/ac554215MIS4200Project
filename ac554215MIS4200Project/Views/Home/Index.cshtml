@@ -3,27 +3,50 @@
 }
 
 <div class="jumbotron">
-    <h1>Nugget</h1>
+    <h1>
+        Nugget
+        <span class="glyphicon glyphicon-eye-open"></span>
+        _
+        <span class="glyphicon glyphicon-eye-open"></span>
+    </h1>
     <p>the cat </p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>The Cat</h2>
+        <div class="well"><h2>The Cat</h2></div>
         <p>
             This is a cat and she is very loud, her name is nugget. <br />
-            Links: <br />
-            @Html.ActionLink("students", "index", "students") <br />
-            @Html.ActionLink("courses", "index", "courses") <br />
-            @Html.ActionLink("enrollments", "index", "enrollments")
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Navigation to Index Views (Dropdown)
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Students", "Index", "students")</a> <br>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Courses", "Index", "courses")</a> <br>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Enrollments", "Index", "enrollments")</a>
+                </div>
+            </div>
         </p>
     </div>
     <div class="col-md-4">
-        <h2>More Nugget</h2>
+        <div class="well"><h2>
+    <span class="glyphicon glyphicon-thumbs-up"></span>
+    More Nugget
+</h2></div>
         <p>What a cutie</p>
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            CAT ALERT
+            <span class="glyphicon glyphicon-warning-sign"></span>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Additional Cat</h2>
+        <div class="well"><h2>
+    <span class="glyphicon glyphicon-heart-empty"></span>
+    Additional Cat
+    <span class="glyphicon glyphicon-heart-empty"></span>
+</h2></div>
         <p>Here is more about the cat.</p>
     </div>
 </div>

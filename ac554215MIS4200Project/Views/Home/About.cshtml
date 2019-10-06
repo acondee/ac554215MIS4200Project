@@ -5,3 +5,13 @@
 <h3>@ViewBag.Message</h3>
 
 <p>This site is used to celbrate my cat nugget.</p>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Navigation From About Page (Dropdown)
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">@Html.ActionLink("Students", "Index", "students")</a> <br>
+        <a class="dropdown-item" href="#">@Html.ActionLink("Courses", "Index", "courses")</a> <br>
+        <a class="dropdown-item" href="#">@Html.ActionLink("Enrollments", "Index", "enrollments")</a> 
+    </div>
+</div>

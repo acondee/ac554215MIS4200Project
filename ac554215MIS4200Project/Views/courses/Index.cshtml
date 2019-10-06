@@ -1,15 +1,22 @@
 ﻿@model IEnumerable<ac554215MIS4200Project.Models.course>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Courses";
 }
 
-<h2>Index</h2>
+<h2>Courses</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <input type="button" class="btn btn-info" value="Create New Course" onclick=" relocate_home()">
+
+    <script>
+function relocate_home()
+{
+     location.href = "http://cob.ohio.edu/ac554215/courses/Create";
+}
+    </script>
 </p>
-<table class="table">
+<table class="table table-bordered table-striped table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.title)
@@ -20,20 +27,21 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.description)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.courseID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.courseID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.courseID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.ActionLink("Edit Course", "Edit", new { id = item.courseID }) |
+                @Html.ActionLink("Course Details", "Details", new { id = item.courseID }) |
+                @Html.ActionLink("Delete Course", "Delete", new { id = item.courseID })
+            </td>
+        </tr>
+    }
 
 </table>
